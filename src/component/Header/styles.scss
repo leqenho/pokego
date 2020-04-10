@@ -1,15 +1,35 @@
+@import "../../assets/sass/global.scss";
+
 #Header {
     padding: 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 
     .logo {
         width: 5rem;
         height: 5rem;
-        display: block;
-        margin: 0 auto;
+        flex: 1 0 0;
+    }
+
+    .btn__container {
+        display: flex;
+        align-items: center;
+        
+        .btn__aside {
+            border: 0;
+            background: transparent;
+            flex: 1 0 0;
+            text-align: left;
+            color: $dark;
+        }
+    }
+
+    & > div {
+        flex: 1 0 0;
     }
 }
 
