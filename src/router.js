@@ -5,13 +5,13 @@ import {
     Switch
 } from 'react-router-dom';
 
-import AllPokemons from './pages/AllPokemons';
+import PaginatedPokemons from './pages/PaginatedPokemons';
 
 export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={ AllPokemons } />
+                <Route exact path="/" component={ PaginatedPokemons } />
             </Switch>
         </BrowserRouter>
     )

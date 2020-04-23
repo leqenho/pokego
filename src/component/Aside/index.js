@@ -1,17 +1,14 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { IoMdMenu } from 'react-icons/io/';
 import { MdShortText } from 'react-icons/md/';
 
 import './styles.scss';
 
-import { OpenContext } from '../../App'
-
 export default function Aside() {
-    const [open, setOpen] = useContext(OpenContext);
     return (
-        <nav id="Aside" className={open ? ('open') : ('close')}>
+        <nav id="Aside" >
             <div className="topbar__aside">
-                <button className="btn__aside" onClick={() => setOpen(!open)}>
+                <button className="btn__aside" >
                     <IoMdMenu size={35} />
                 </button>
             </div>

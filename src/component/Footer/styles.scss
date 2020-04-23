@@ -1,7 +1,15 @@
+@import "../../assets/sass/global.scss";
+
 #Footer {
     text-align: center;
     padding: 1.5rem;
     width: 100%;
     position: fixed;
     bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 0 0.5rem 0.2rem rgba($color: $dark, $alpha: 0.5);
+}
+
+#Footer ~ .clear {
+    height: 5.1rem;
 }

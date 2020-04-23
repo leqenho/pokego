@@ -8,6 +8,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 0.5rem 0.2rem rgba($color: $dark, $alpha: 0.5);
 
     .logo {
         width: 5rem;
@@ -33,6 +35,6 @@
     }
 }
 
-.clear {
+#Header ~ .clear {
     height: 8rem;
 }
